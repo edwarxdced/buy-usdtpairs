@@ -9,8 +9,8 @@ DbConfig = Dict[str, str]
 
 db_config: DbConfig = {
     'host': 'localhost',
-    'user': 'root',
-    'password': '',
+    'user': 'tracker',
+    'password': 'your_password',
     'database': 'binance_pairs'
 }
 
