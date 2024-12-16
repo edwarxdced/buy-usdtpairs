@@ -87,4 +87,7 @@ def check_and_buy_new_pairs():
 
 
 if __name__ == "__main__":
+    send_telegram_message("Checking for new trading pairs and buying opportunities...")
     check_and_buy_new_pairs()
+    send_telegram_message("Process completed. New pairs checked and actions taken.")
+
