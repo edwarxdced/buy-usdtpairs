@@ -1,6 +1,6 @@
 from binance.client import Client 
 import time
-from db_handler import create_table, save_pair, save_order, create_orders_table, get_saved_pairs
+from db_handler import save_pair, save_order, get_saved_pairs
 from telegram import send_telegram_message
 
 API_KEY = 'jD6shuP7R9oxoBOfUorit1ULFsctNjjn4572yuoqbgQ2RgTagL8sVJ8pUgp5ZvCQ'
