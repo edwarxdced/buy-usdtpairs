@@ -1,6 +1,6 @@
 from binance.client import Client 
 from db_handler import create_table, create_orders_table, save_pair
-
+from telegram import send_telegram_message
 
 
 def save_all_pairs_usdt():
@@ -33,3 +33,4 @@ if __name__ == "__main__":
     create_table()
     create_orders_table()
     save_all_pairs_usdt()
+    send_telegram_message('Hello! This is a test message from my Telegram bot.')
