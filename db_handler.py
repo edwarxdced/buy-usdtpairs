@@ -113,13 +113,13 @@ def create_table():
         
         # Create table if it doesn't exist
         cursor.execute("""
-            CREATE TABLE IF NOT EXISTS usdt_pairs (
-                id INTEGER PRIMARY KEY AUTO_INCREMENT,
-                symbol TEXT UNIQUE,
-                base_asset TEXT,
-                quote_asset TEXT,
-                timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            )
+            CREATE TABLE `usdt_pairs` (
+                `id` int(11) NOT NULL,
+                `symbol` text DEFAULT NULL,
+                `base_asset` text DEFAULT NULL,
+                `quote_asset` text DEFAULT NULL,
+                `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
         """)
         print("USDT pairs table created successfully")
         conn.commit()
