@@ -75,15 +75,21 @@ PAIR_QUOTE=USDT
 
 ---
 
-## 🛠️ Usage
+## 🛠️ Setup Instructions
 
-### 1. Create database tables and seed initial pairs
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Create database tables and seed initial pairs
 
 ```bash
 python setup_db.py
 ```
 
-### 2. Run the trading bot
+### 3. Run the trading bot
 
 ```bash
 python main.py
@@ -117,3 +123,12 @@ This bot demonstrates:
 
 Developed by [Edwar Cedeño](https://www.linkedin.com/in/edwar-cedeno/)  
 💼 Backend Developer | Python | Fintech & Crypto
+
+
+## ⚠️ Disclaimer
+
+This project is created solely for educational purposes and knowledge sharing.  
+It is not intended for use in live trading with real funds unless properly tested, audited, and adapted to your specific risk management needs.  
+The author is not responsible for any financial loss resulting from the use of this code.
+
+Use at your own risk.
